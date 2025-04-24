@@ -18,7 +18,7 @@ app.set("view engine","ejs")
 productRouter.route("/").get((req,res) =>{
     res.render("products",{
         products,
-            s
+            
         }
     );
 });
@@ -26,7 +26,7 @@ productRouter.route("/").get((req,res) =>{
 productRouter.route("/:id").get((req, res) =>{
     const id = req.params.id;
     res.render("product",{
-        produtc: products[id],
+        product: products[id],
 
     })
 });
