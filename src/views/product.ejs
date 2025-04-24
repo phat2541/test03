@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+
+<body>
+  <h1>Supercars</h1>
+        <% products.map((product)=>{ %>
+        <h3>
+        <a href="/products/<%=product.id%>"><%=product.title %></a>
+        </h3>
+        <p><%=product.Description%></p>
+        <p>ราคา : <%=product.Price %> ล้านบาท</p>
+        <%})%>
+  </body>
+  </html>
