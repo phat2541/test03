@@ -17,22 +17,46 @@
     <title>Play | Free Startup and SaaS Landing Page Template by UIdeck</title>
 
     <!-- Primary Meta Tags -->
-<meta name="title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
-<meta name="description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
+    <meta
+      name="title"
+      content="Play - Free Open Source HTML Bootstrap Template by UIdeck"
+    />
+    <meta
+      name="description"
+      content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team"
+    />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://uideck.com/play/">
-<meta property="og:title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
-<meta property="og:description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
-<meta property="og:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://uideck.com/play/" />
+    <meta
+      property="og:title"
+      content="Play - Free Open Source HTML Bootstrap Template by UIdeck"
+    />
+    <meta
+      property="og:description"
+      content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team"
+    />
+    <meta
+      property="og:image"
+      content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg"
+    />
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://uideck.com/play/">
-<meta property="twitter:title" content="Play - Free Open Source HTML Bootstrap Template by UIdeck">
-<meta property="twitter:description" content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team">
-<meta property="twitter:image" content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://uideck.com/play/" />
+    <meta
+      property="twitter:title"
+      content="Play - Free Open Source HTML Bootstrap Template by UIdeck"
+    />
+    <meta
+      property="twitter:description"
+      content="Play - Free Open Source HTML Bootstrap Template by UIdeck Team"
+    />
+    <meta
+      property="twitter:image"
+      content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg"
+    />
 
     <!--====== Favicon Icon ======-->
     <link
@@ -138,8 +162,14 @@
     <!-- ====== Header End ====== -->
 
     <section id="contact" class="ud-contact">
-      <div class="container"></section>
-
+      <div class="container">
+        <h1>Hello Node.js Express</h1>
+        <% products.map((product)=>{ %>
+        <h3><%=product.title %></h3>
+        <p><%=product.Description%></p>
+        <%})%>
+      </div>
+    </section>
 
     <!-- ====== Footer Start ====== -->
     <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
@@ -375,7 +405,6 @@
       </div>
     </footer>
     <!-- ====== Footer End ====== -->
-
 
     <!-- ====== Back To Top Start ====== -->
     <a href="javascript:void(0)" class="back-to-top">
