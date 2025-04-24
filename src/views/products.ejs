@@ -6,7 +6,9 @@
 <body>
   <h1> Hiper Supercar</h1>
         <% products.map((product)=>{ %>
-        <a href="/products/<%products.id%>"><%=product.title %></a>
+        <h3>
+        <a href="/products/<%=product.id%>"><%=product.title %></a>
+        </h3>
         <p><%=product.Description%></p>
         <p>ราคา : <%=product.Price %> ล้านบาท</p>
         <%})%>
