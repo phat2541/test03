@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const debug = require('debug')('app');
 const morgan = require('morgan');  
 const path = require('path');
+const products = require("./data/products.json");
 const productRouter = express.Router();
 
 const app = express();
@@ -16,12 +17,7 @@ app.set("view engine","ejs")
 
 productRouter.route("/").get((req,res) =>{
     res.render("products",{
-        products: [
-            {title: 'car1', Description: 'NISSIN SKYLINE R35' , Price : 25},
-            {title: 'car2', Description: 'MORSIDAS BENZ ' , Price : 30},
-            {title: 'car3', Description: 'MACRARAN P1 ' , Price : 50},
-            {title: 'car4', Description: 'BMW SERIES 3 ' , Price : 10},
-        ]
+        products,
     }
     );
 });
