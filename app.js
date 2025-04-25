@@ -4,9 +4,9 @@ const debug = require('debug')('app');
 const morgan = require('morgan');
 const path = require('path');
 
-const app = express();
+
 const PORT = 3000;
-const productRouter = require("./src/router/productsRouter")
+const productsRouter = require("./src/router/productsRouter")
 
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, "/public/")));
