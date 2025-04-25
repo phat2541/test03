@@ -15,7 +15,7 @@ productRouter.route("/:id").get((req, res) =>{
     res.render("product",{
         product: products[id],
 
-    })
+    });
 });
 
 module.exports = productsRouter;
